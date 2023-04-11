@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display employee table details </h1>
+        <tr>
+            <th>EMPNO</th>
+            <th>EMPNAME</th>
+            <th>JOB</th>
+            <th>MGR</th>
+            <th>HIREDATE</th>
+            <th>SAL</th>
+            <th>COMM</th>
+            <th>DEPTNO</th>
+        </tr>
+        {% fro e in emp %}
+        <tr>
+            <td>{{e.EMPNO}}</td>
+            <td>{{e.EMPNAME}}</td>
+            <td>{{e.JOB}}</td>
+            <td>{{e.MGR}}</td>
+            <td>{{e.HIREDATE}}</td>
+            <td>{{e.SAL}}</td>
+            <td>{{e.COMM}}</td>
+            <td>{{e.DEPTNO}}</td>
+        </tr>
+        {% endfor %}
+    </center>
+</body>
+</html>
